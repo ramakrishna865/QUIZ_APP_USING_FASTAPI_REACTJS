@@ -13,7 +13,7 @@ def send_email(to_email: str, name: str, correct: int, total: int):
     try:
         with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
             smtp.starttls()
-            smtp.login('prameelarani769@gmail.com', 'cnzb wdwn vkix vprz')  
+            smtp.login('prameelarani769@gmail.com', 'cnzb ix vprz')  
             smtp.send_message(msg)
       
     
