@@ -1,0 +1,274 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.app-container {
+  max-width: 600px;
+  margin: 40px auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+select,
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+select:focus,
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.question-item {
+  margin-bottom: 18px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.finish-btn {
+  margin-top: 20px;
+}
+
+.user-info-form input {
+  margin-bottom: 12px;
+}
+/* App.css */
+
+.app-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 24px 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #212529;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #34495e;
+  font-weight: 600;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 6px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #495057;
+}
+
+select,
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: 1.5px solid #ced4da;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+select:focus,
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 6px rgba(52, 152, 219, 0.4);
+}
+
+.question-item {
+  background-color: #f9f9f9;
+  border-left: 5px solid #3498db;
+  padding: 18px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(52, 152, 219, 0.1);
+}
+
+.finish-btn,
+.submit-btn {
+  display: block;
+  width: 100%;
+  background-color: #3498db;
+  color: white;
+  padding: 14px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.finish-btn:hover,
+.submit-btn:hover {
+  background-color: #2980b9;
+}
+
+.user-info-form input {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .finish-btn,
+  .submit-btn {
+    font-size: 16px;
+    padding: 12px 0;
+  }
+}
+.app-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+label, h2 {
+  margin: 10px 0;
+  display: block;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.close-btn {
+  margin-top: 15px;
+  background-color: #28a745;
+}
+
+.close-btn:hover {
+  background-color: #218838;
+}
+
