@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Thank You, {{ name }}!</h1>
+    <p>You scored <strong>{{ correct }}</strong> out of <strong>{{ total }}</strong>.</p>
+    <p>Results have been emailed to <strong>{{ email }}</strong>.</p>
+    <a href="/web/categories">Take another quiz</a>
+</div>
+</body>
+</html>

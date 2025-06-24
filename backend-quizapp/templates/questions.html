@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Questions</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Answer the Questions</h1>
+    <form action="/web/submit" method="post">
+        <input type="hidden" name="category_id" value="{{ category_id }}">
+        
+        <label>Your Name</label>
+        <input type="text" name="name" required>
+
+        <label>Your Email</label>
+        <input type="email" name="email" required>
+
+        {% for question in questions %}
+            <div class="question">
+                <label>{{ loop.index }}. {{ question.question }}</label>
+                <input type="text" name="answer_{{ question.id }}" required>
+            </div>
+        {% endfor %}
+
+        <button type="submit">Submit Quiz</button>
+    </form>
+</div>
+</body>
+</html>
